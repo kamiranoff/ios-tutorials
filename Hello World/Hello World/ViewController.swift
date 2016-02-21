@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var label: UILabel!
     @IBOutlet var textField: UITextField!
+    @IBOutlet var answerLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -28,7 +29,18 @@ class ViewController: UIViewController {
     @IBAction func submit(sender: AnyObject) {
         log("Button tapped")
     
-        label.text = "Elvis was born on " + textField.text!;
+        var elvisAge = textField.text;
+        if(elvisAge! == ""){
+            elvisAge = "??"
+        }
+        
+        label.text = "Elvis was born on " + elvisAge!;
+        if(textField.text! == "1943"){
+            answerLabel.text = "Well done";
+            
+        }else{
+            answerLabel.text = "Try again";
+        }
     }
     
     
