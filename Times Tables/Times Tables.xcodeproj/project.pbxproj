@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A44D3951C7A60B3006759E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A44D3941C7A60B3006759E2 /* AppDelegate.swift */; };
-		0A44D3971C7A60B3006759E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A44D3961C7A60B3006759E2 /* ViewController.swift */; };
-		0A44D39A1C7A60B3006759E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A44D3981C7A60B3006759E2 /* Main.storyboard */; };
-		0A44D39C1C7A60B3006759E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A44D39B1C7A60B3006759E2 /* Assets.xcassets */; };
-		0A44D39F1C7A60B3006759E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A44D39D1C7A60B3006759E2 /* LaunchScreen.storyboard */; };
+		0AF878471C7BA3E900A406CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF878461C7BA3E900A406CA /* AppDelegate.swift */; };
+		0AF878491C7BA3E900A406CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF878481C7BA3E900A406CA /* ViewController.swift */; };
+		0AF8784C1C7BA3E900A406CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF8784A1C7BA3E900A406CA /* Main.storyboard */; };
+		0AF8784E1C7BA3E900A406CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF8784D1C7BA3E900A406CA /* Assets.xcassets */; };
+		0AF878511C7BA3E900A406CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF8784F1C7BA3E900A406CA /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0A44D3911C7A60B3006759E2 /* StopWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StopWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A44D3941C7A60B3006759E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0A44D3961C7A60B3006759E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0A44D3991C7A60B3006759E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0A44D39B1C7A60B3006759E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0A44D39E1C7A60B3006759E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0A44D3A01C7A60B3006759E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AF878431C7BA3E900A406CA /* Times Tables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Times Tables.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AF878461C7BA3E900A406CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0AF878481C7BA3E900A406CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0AF8784B1C7BA3E900A406CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0AF8784D1C7BA3E900A406CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0AF878501C7BA3E900A406CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0AF878521C7BA3E900A406CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0A44D38E1C7A60B3006759E2 /* Frameworks */ = {
+		0AF878401C7BA3E900A406CA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,72 +35,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A44D3881C7A60B3006759E2 = {
+		0AF8783A1C7BA3E800A406CA = {
 			isa = PBXGroup;
 			children = (
-				0A44D3931C7A60B3006759E2 /* StopWatch */,
-				0A44D3921C7A60B3006759E2 /* Products */,
+				0AF878451C7BA3E900A406CA /* Times Tables */,
+				0AF878441C7BA3E900A406CA /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0A44D3921C7A60B3006759E2 /* Products */ = {
+		0AF878441C7BA3E900A406CA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0A44D3911C7A60B3006759E2 /* StopWatch.app */,
+				0AF878431C7BA3E900A406CA /* Times Tables.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0A44D3931C7A60B3006759E2 /* StopWatch */ = {
+		0AF878451C7BA3E900A406CA /* Times Tables */ = {
 			isa = PBXGroup;
 			children = (
-				0A44D3941C7A60B3006759E2 /* AppDelegate.swift */,
-				0A44D3961C7A60B3006759E2 /* ViewController.swift */,
-				0A44D3981C7A60B3006759E2 /* Main.storyboard */,
-				0A44D39B1C7A60B3006759E2 /* Assets.xcassets */,
-				0A44D39D1C7A60B3006759E2 /* LaunchScreen.storyboard */,
-				0A44D3A01C7A60B3006759E2 /* Info.plist */,
+				0AF878461C7BA3E900A406CA /* AppDelegate.swift */,
+				0AF878481C7BA3E900A406CA /* ViewController.swift */,
+				0AF8784A1C7BA3E900A406CA /* Main.storyboard */,
+				0AF8784D1C7BA3E900A406CA /* Assets.xcassets */,
+				0AF8784F1C7BA3E900A406CA /* LaunchScreen.storyboard */,
+				0AF878521C7BA3E900A406CA /* Info.plist */,
 			);
-			path = StopWatch;
+			path = "Times Tables";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0A44D3901C7A60B3006759E2 /* StopWatch */ = {
+		0AF878421C7BA3E900A406CA /* Times Tables */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A44D3A31C7A60B3006759E2 /* Build configuration list for PBXNativeTarget "StopWatch" */;
+			buildConfigurationList = 0AF878551C7BA3E900A406CA /* Build configuration list for PBXNativeTarget "Times Tables" */;
 			buildPhases = (
-				0A44D38D1C7A60B3006759E2 /* Sources */,
-				0A44D38E1C7A60B3006759E2 /* Frameworks */,
-				0A44D38F1C7A60B3006759E2 /* Resources */,
+				0AF8783F1C7BA3E900A406CA /* Sources */,
+				0AF878401C7BA3E900A406CA /* Frameworks */,
+				0AF878411C7BA3E900A406CA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = StopWatch;
-			productName = StopWatch;
-			productReference = 0A44D3911C7A60B3006759E2 /* StopWatch.app */;
+			name = "Times Tables";
+			productName = "Times Tables";
+			productReference = 0AF878431C7BA3E900A406CA /* Times Tables.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0A44D3891C7A60B3006759E2 /* Project object */ = {
+		0AF8783B1C7BA3E900A406CA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Kevin Amiranoff";
 				TargetAttributes = {
-					0A44D3901C7A60B3006759E2 = {
+					0AF878421C7BA3E900A406CA = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = 23C3Y8VELR;
 					};
 				};
 			};
-			buildConfigurationList = 0A44D38C1C7A60B3006759E2 /* Build configuration list for PBXProject "StopWatch" */;
+			buildConfigurationList = 0AF8783E1C7BA3E900A406CA /* Build configuration list for PBXProject "Times Tables" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -108,54 +108,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 0A44D3881C7A60B3006759E2;
-			productRefGroup = 0A44D3921C7A60B3006759E2 /* Products */;
+			mainGroup = 0AF8783A1C7BA3E800A406CA;
+			productRefGroup = 0AF878441C7BA3E900A406CA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0A44D3901C7A60B3006759E2 /* StopWatch */,
+				0AF878421C7BA3E900A406CA /* Times Tables */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0A44D38F1C7A60B3006759E2 /* Resources */ = {
+		0AF878411C7BA3E900A406CA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A44D39F1C7A60B3006759E2 /* LaunchScreen.storyboard in Resources */,
-				0A44D39C1C7A60B3006759E2 /* Assets.xcassets in Resources */,
-				0A44D39A1C7A60B3006759E2 /* Main.storyboard in Resources */,
+				0AF878511C7BA3E900A406CA /* LaunchScreen.storyboard in Resources */,
+				0AF8784E1C7BA3E900A406CA /* Assets.xcassets in Resources */,
+				0AF8784C1C7BA3E900A406CA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0A44D38D1C7A60B3006759E2 /* Sources */ = {
+		0AF8783F1C7BA3E900A406CA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A44D3971C7A60B3006759E2 /* ViewController.swift in Sources */,
-				0A44D3951C7A60B3006759E2 /* AppDelegate.swift in Sources */,
+				0AF878491C7BA3E900A406CA /* ViewController.swift in Sources */,
+				0AF878471C7BA3E900A406CA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0A44D3981C7A60B3006759E2 /* Main.storyboard */ = {
+		0AF8784A1C7BA3E900A406CA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0A44D3991C7A60B3006759E2 /* Base */,
+				0AF8784B1C7BA3E900A406CA /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		0A44D39D1C7A60B3006759E2 /* LaunchScreen.storyboard */ = {
+		0AF8784F1C7BA3E900A406CA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0A44D39E1C7A60B3006759E2 /* Base */,
+				0AF878501C7BA3E900A406CA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -163,7 +163,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		0A44D3A11C7A60B3006759E2 /* Debug */ = {
+		0AF878531C7BA3E900A406CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -207,7 +207,7 @@
 			};
 			name = Debug;
 		};
-		0A44D3A21C7A60B3006759E2 /* Release */ = {
+		0AF878541C7BA3E900A406CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -244,52 +244,49 @@
 			};
 			name = Release;
 		};
-		0A44D3A41C7A60B3006759E2 /* Debug */ = {
+		0AF878561C7BA3E900A406CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = StopWatch/Info.plist;
+				INFOPLIST_FILE = "Times Tables/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nemeacreation.Stop-watch";
-				PRODUCT_NAME = StopWatch;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nemeacreation.Times-Tables";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		0A44D3A51C7A60B3006759E2 /* Release */ = {
+		0AF878571C7BA3E900A406CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = StopWatch/Info.plist;
+				INFOPLIST_FILE = "Times Tables/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nemeacreation.Stop-watch";
-				PRODUCT_NAME = StopWatch;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nemeacreation.Times-Tables";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0A44D38C1C7A60B3006759E2 /* Build configuration list for PBXProject "StopWatch" */ = {
+		0AF8783E1C7BA3E900A406CA /* Build configuration list for PBXProject "Times Tables" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A44D3A11C7A60B3006759E2 /* Debug */,
-				0A44D3A21C7A60B3006759E2 /* Release */,
+				0AF878531C7BA3E900A406CA /* Debug */,
+				0AF878541C7BA3E900A406CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A44D3A31C7A60B3006759E2 /* Build configuration list for PBXNativeTarget "StopWatch" */ = {
+		0AF878551C7BA3E900A406CA /* Build configuration list for PBXNativeTarget "Times Tables" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A44D3A41C7A60B3006759E2 /* Debug */,
-				0A44D3A51C7A60B3006759E2 /* Release */,
+				0AF878561C7BA3E900A406CA /* Debug */,
+				0AF878571C7BA3E900A406CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0A44D3891C7A60B3006759E2 /* Project object */;
+	rootObject = 0AF8783B1C7BA3E900A406CA /* Project object */;
 }
