@@ -115,6 +115,36 @@ func isItPrime (number:Int) -> Bool{
 
 isItPrime(13)
 
+var helloString = "Hello"
+var newString = helloString + " Kevin"
+
+for char in newString.characters{
+  
+  print(char)
+}
+
+var newTypeString = NSString(string: newString); //NSString is the native type
+
+newTypeString.substringToIndex(5)
+newTypeString.substringFromIndex(6)
+
+newTypeString.substringWithRange(NSRange(location: 3, length: 5))
+
+if newTypeString.containsString("Kevin"){
+  //Kevin inside
+}
+
+newTypeString.componentsSeparatedByString(" ")
+newTypeString.uppercaseString
+newTypeString.lowercaseString
+
+
+
+
+
+
+
+
 
 
 
