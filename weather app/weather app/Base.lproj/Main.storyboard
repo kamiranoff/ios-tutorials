@@ -47,17 +47,10 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="findWeather:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rMl-xT-nPZ"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5J2-25-9BH">
-                                <rect key="frame" x="13" y="272" width="567" height="265"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="567" id="HJI-tv-mdw"/>
-                                    <constraint firstAttribute="height" constant="265" id="OOd-br-7n4"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pick a city" textAlignment="center" minimumFontSize="25" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dHO-GV-To7">
                                 <rect key="frame" x="219" y="113" width="162" height="40"/>
                                 <constraints>
@@ -66,23 +59,35 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5J2-25-9BH">
+                                <rect key="frame" x="20" y="273" width="560" height="265"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="dHO-GV-To7" firstAttribute="top" secondItem="tIB-eX-Q2l" secondAttribute="bottom" constant="31" id="A4g-fP-yDL"/>
                             <constraint firstItem="tIB-eX-Q2l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Co4-3i-6SV"/>
+                            <constraint firstItem="5J2-25-9BH" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="FQH-U5-hnc"/>
                             <constraint firstItem="dHO-GV-To7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IOB-9L-aTB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="NZD-NQ-reV" secondAttribute="trailing" constant="-20" id="LHZ-fR-mSA"/>
                             <constraint firstItem="tIB-eX-Q2l" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="OnL-to-Ki0"/>
+                            <constraint firstItem="5J2-25-9BH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qcb-g7-aXF"/>
                             <constraint firstItem="NZD-NQ-reV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="SSZ-e0-Oh7"/>
-                            <constraint firstItem="5J2-25-9BH" firstAttribute="top" secondItem="9JK-RO-aR3" secondAttribute="bottom" constant="25" id="Shh-zd-2iz"/>
                             <constraint firstItem="NZD-NQ-reV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="fEM-yA-xPU"/>
-                            <constraint firstItem="5J2-25-9BH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j4l-se-H84"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NZD-NQ-reV" secondAttribute="bottom" id="jXy-QG-Mcc"/>
+                            <constraint firstItem="5J2-25-9BH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mSN-zf-YrP"/>
                             <constraint firstItem="9JK-RO-aR3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qex-RX-lS0"/>
                             <constraint firstItem="9JK-RO-aR3" firstAttribute="top" secondItem="dHO-GV-To7" secondAttribute="bottom" constant="52" id="vvt-Nk-wCL"/>
+                            <constraint firstItem="5J2-25-9BH" firstAttribute="top" secondItem="9JK-RO-aR3" secondAttribute="bottom" constant="26" id="wTi-24-6Og"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="5J2-25-9BH" id="RKm-7w-Oc6"/>
+                        <outlet property="textField" destination="dHO-GV-To7" id="p8z-2o-pc2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
