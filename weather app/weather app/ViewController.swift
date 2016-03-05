@@ -9,10 +9,11 @@
 import UIKit
 import XCGLogger
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITextFieldDelegate {
   
   @IBOutlet var textField: UITextField!
   @IBOutlet var resultLabel: UILabel!
+  @IBOutlet var findWeatherBtn: UIButton!
   
   @IBAction func findWeather(sender: AnyObject) {
     
@@ -43,11 +44,16 @@ class ViewController: UIViewController {
               log.verbose("Was Successful");
               wasSuccessful = true;
               
+              
+             
+              
               let weatherSummary = weatherArray[0].stringByReplacingOccurrencesOfString("&deg;", withString: "°")
               
               dispatch_async(dispatch_get_main_queue(), { () -> Void in
                 self.resultLabel.text = weatherSummary
+                self.findWeatherBtn.backgroundColor = UIColor.greenColor()
               })
+              
               
             }
             
@@ -58,6 +64,7 @@ class ViewController: UIViewController {
           dispatch_async(dispatch_get_main_queue(), { () -> Void in
 
             self.resultLabel.text = "Could not find the weather for what you typed in."
+            self.findWeatherBtn.backgroundColor = UIColor.redColor()
           })
         }
       }
@@ -75,11 +82,19 @@ class ViewController: UIViewController {
     
   }
   
+  override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    self.view.endEditing(true);
+  }
+  
+  func textFieldShouldReturn(textField:UITextField) -> Bool{
+    textField.resignFirstResponder();
+    return true
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
-    
+    self.textField.delegate = self
   }
   
   override func didReceiveMemoryWarning() {

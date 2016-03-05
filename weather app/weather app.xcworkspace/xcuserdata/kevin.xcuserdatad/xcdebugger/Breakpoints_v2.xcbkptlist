@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "weather app/ViewController.swift"
-            timestampString = "478656660.836202"
+            timestampString = "478871881.87117"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "findWeather(_:)"
             landmarkType = "5">
          </BreakpointContent>
