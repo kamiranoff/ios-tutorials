@@ -52,7 +52,7 @@ class ViewController: UIViewController {
       return false;
     }
     //if not, then just check the odds
-    for(var i = 3; i*i <= number; i+=2){
+    for(var i = 3; i*i > number; i+=2){
       if(number % i == 0){
         return false;
       }
