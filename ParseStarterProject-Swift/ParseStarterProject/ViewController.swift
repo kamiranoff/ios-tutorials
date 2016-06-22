@@ -12,23 +12,49 @@ import Parse
 
 class ViewController: UIViewController {
   
+  
+  var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
 
   @IBOutlet var username: UITextField!
   @IBOutlet var password: UITextField!
   
-  var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
-  
   @IBAction func signup(sender: AnyObject) {
   
     if (username.text == "" || password.text == ""){
-      let alert = UIAlertController(title: "Error in form", message: "Please enter username and password", preferredStyle: UIAlertControllerStyle.Alert)
-      alert.addAction((UIAlertAction(title: "Ok", style: .Default, handler: { (action) in
-        self.dismissViewControllerAnimated(true, completion: nil)
-      })))
-      
-      self.presentViewController(alert, animated: true, completion: nil)
+      displayAlert("Error in form", message: "Please enter a username or password")
     }else{
-      startActivity(activityIndicator);
+      
+      activityIndicator = UIActivityIndicatorView(frame: CGRectMake(0,0,50,50))
+      activityIndicator.center = self.view.center;
+      activityIndicator.hidesWhenStopped = true;
+      activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.White
+      view.addSubview(activityIndicator)
+      activityIndicator.startAnimating()
+      UIApplication.sharedApplication().beginIgnoringInteractionEvents()
+      
+      
+      
+      var errorMessage = "Please try again later"
+      let user = PFUser()
+      user.username = username.text
+      user.password = password.text
+      
+      user.signUpInBackgroundWithBlock { (success, error) in
+        self.activityIndicator.stopAnimating()
+        UIApplication.sharedApplication().endIgnoringInteractionEvents()
+        
+        if error == nil {
+          //signup successful
+        }else{
+          if let errorString = error?.userInfo["error"] as? String{
+            errorMessage = errorString
+          }
+          
+          self.displayAlert("Failed to sign up", message: errorMessage)
+          
+        }
+      }
+
     }
   }
   
@@ -37,26 +63,25 @@ class ViewController: UIViewController {
     
   }
   
-  func startActivity(act:UIActivityIndicatorView) -> UIActivityIndicatorView{
-    let act = UIActivityIndicatorView(frame: CGRectMake(0,0,50,50))
-    act.center = self.view.center;
-    act.hidesWhenStopped = true;
-    act.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.White
-    view.addSubview(act)
-    act.startAnimating()
-    UIApplication.sharedApplication().beginIgnoringInteractionEvents()
-    return act
+  
+  func displayAlert(title:String,message:String) {
+    let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
+    alert.addAction((UIAlertAction(title: "ok", style: .Default, handler: { (action) in
+      self.dismissViewControllerAnimated(true, completion: nil)
+    })))
+    
+    self.presentViewController(alert, animated: true, completion: nil)
   }
   
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view, typically from a nib.
       
 
-    }
+  }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
 }
